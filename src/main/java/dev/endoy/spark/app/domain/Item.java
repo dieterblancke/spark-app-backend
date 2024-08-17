@@ -3,7 +3,8 @@ package dev.endoy.spark.app.domain;
 import lombok.Value;
 
 @Value
-public class Item {
+public class Item
+{
 
     long id;
     String name;
