@@ -16,11 +16,11 @@ public class ItemService
     public ItemService()
     {
         this.items = new ArrayList<>();
-        this.items.add( new Item( 1, "Item 1", "Description 1", 100 ) );
-        this.items.add( new Item( 2, "Item 2", "Description 2", 200 ) );
-        this.items.add( new Item( 3, "Item 3", "Description 3", 300 ) );
-        this.items.add( new Item( 4, "Item 4", "Description 4", 400 ) );
-        this.items.add( new Item( 5, "Item 5", "Description 5", 500 ) );
+
+        for ( int i = 1; i <= 50; i++ )
+        {
+            this.items.add( new Item( i, "Item " + i, "Description of item " + i, i * 100 ) );
+        }
     }
 
     public List<Item> getItems( String searchText )
