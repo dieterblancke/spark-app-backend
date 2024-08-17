@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.UUID;
 
 @RestController
 @RequiredArgsConstructor
@@ -28,7 +27,7 @@ public class ItemsController {
     @Value
     public static class ItemDTO {
 
-        UUID uuid;
+        long id;
         String name;
         String description;
         int price;
